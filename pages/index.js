@@ -8,7 +8,7 @@ import Slider from "../component/slider";
 const Home = () => {
   return (
     <div>
-      <Layout>
+      <Layout title="Home">
         <Slider />
         <Jumbotron
           jtitle="Selamat Datang"

@@ -1,12 +1,16 @@
-import Navbar from './navbar';
-import Footer from './footer';
-const Layout =(props)=>{
-    return(
-        <div>
-            <Navbar/>
-            {props.children}
-            <Footer/>
-        </div>
-    )
-}
+import Head from "next/head";
+import Navbar from "./navbar";
+import Footer from "./footer";
+const Layout = (props) => {
+  return (
+    <div>
+      <Head>
+        <title>{props.title}</title>
+      </Head>
+      <Navbar />
+      {props.children}
+      <Footer />
+    </div>
+  );
+};
 export default Layout;
