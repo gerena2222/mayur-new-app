@@ -6,7 +6,7 @@ const Navbar = () => {
                 <div className="container">
                     <Link href="/">
                         <a className="navbar-brand">
-                            <img src="../static/logo.png" width="auto" height="40" alt="" />
+                            <img src="/static/logo.png" width="auto" height="40" alt="" />
                         </a>
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,28 +20,28 @@ const Navbar = () => {
                                     <a className="nav-link">Home </a>
                                 </Link>
                             </li>
-                            <li className="nav-item active">
-                                <Link href="/">
+                            <li className="nav-item">
+                                <Link href="/product/">
                                     <a className="nav-link">Product </a>
                                 </Link>
                             </li>
-                            <li className="nav-item active">
-                                <Link href="/">
+                            <li className="nav-item">
+                                <Link href="/event">
                                     <a className="nav-link">Event </a>
                                 </Link>
                             </li>
-                            <li className="nav-item active">
-                                <Link href="/">
+                            <li className="nav-item">
+                                <Link href="/partners">
                                     <a className="nav-link">Partners </a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/education/">
+                                <Link href="/education">
                                     <a className="nav-link">Education </a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/about/">
+                                <Link href="/about">
                                     <a className="nav-link">About </a>
                                 </Link>
                             </li>

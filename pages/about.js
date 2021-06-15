@@ -1,5 +1,5 @@
-import Layout from "../../component/mainLayout";
-import Jumbotron from "../../component/jumbotron";
+import Layout from "../component/mainLayout";
+import Jumbotron from "../component/jumbotron";
 const About = () => {
   return (
     <div>

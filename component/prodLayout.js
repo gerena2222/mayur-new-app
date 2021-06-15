@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ProdLayout = (props) => {
   return (
     <div>
@@ -7,9 +8,9 @@ const ProdLayout = (props) => {
           <h5 className="card-title">{props.prodtitle}</h5>
           <p>{props.prodteks}</p>
           <hr />
-          <a href="#" className="btn btn-primary">
-            View Detail
-          </a>
+          <Link href="/product/[id]/[nama]" as={props.as}>
+            <a className="btn btn-primary">View Detail</a>
+          </Link>
         </div>
       </div>
     </div>

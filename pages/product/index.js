@@ -1,19 +1,12 @@
-import AboutSection from "../component/aboutSection";
-import CardProduct from "../component/cardProduct";
-import Jumbotron from "../component/jumbotron";
-import Layout from "../component/mainLayout";
-import ProdLayout from "../component/prodLayout";
-import Slider from "../component/slider";
-
-const Home = () => {
+import CardProduct from "../../component/cardProduct";
+import Jumbotron from "../../component/jumbotron";
+import ProdLayout from "../../component/prodLayout";
+import Layout from "../../component/mainLayout";
+const Product = () => {
   return (
     <div>
-      <Layout title="Home">
-        <Slider />
-        <Jumbotron
-          jtitle="Selamat Datang"
-          jteks="kami melayani anda dengan actual"
-        />
+      <Layout title="Product">
+        <Jumbotron class="tq" jtitle="Selamat Datang" jteks="Halaman Product" />
         <CardProduct>
           <ProdLayout
             as="/product/1/produk-1"
@@ -46,9 +39,8 @@ const Home = () => {
             prodteks="ini sebuah contoh"
           />
         </CardProduct>
-        <AboutSection/>
       </Layout>
     </div>
   );
 };
-export default Home;
+export default Product;

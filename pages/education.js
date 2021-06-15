@@ -1,6 +1,6 @@
-import Layout from "../../component/mainLayout";
-import Jumbotron from "../../component/jumbotron";
-import CardLong from "../../component/cardLong";
+import Layout from "../component/mainLayout";
+import Jumbotron from "../component/jumbotron";
+import CardLong from "../component/cardLong";
 const Education = () => {
   return (
     <div>
