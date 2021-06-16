@@ -4,7 +4,7 @@ import CardLong from "../component/cardLong";
 const Education = () => {
   return (
     <div>
-      <Layout title="Education">
+      <Layout title="Edukasi">
         <Jumbotron
           class="tq"
           jtitle="Selamat Datang"

@@ -5,7 +5,7 @@ import Layout from "../../component/mainLayout";
 const Product = () => {
   return (
     <div>
-      <Layout title="Product">
+      <Layout title="Produk">
         <Jumbotron class="tq" jtitle="Selamat Datang" jteks="Halaman Product" />
         <CardProduct>
           <ProdLayout

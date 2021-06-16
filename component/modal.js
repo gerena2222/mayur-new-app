@@ -1,14 +1,14 @@
 const Modal = (props) => {
   return (
     <div>
-      <div className="modal fade product_view" id="view_detail">
+      <div className="modal fade product_view" id={props.id}>
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">
               <a href="#" data-dismiss="modal" className="class pull-right">
                 <span className="glyphicon glyphicon-remove"></span>
               </a>
-              <h3 className="modal-title">Detail View</h3>
+              <h3 className="modal-title">Paket Mitra</h3>
             </div>
             <div className="modal-body ">
               <div className="row ">

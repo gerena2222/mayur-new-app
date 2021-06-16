@@ -3,7 +3,7 @@ import Jumbotron from "../component/jumbotron";
 const Event = () => {
   return (
     <div>
-      <Layout title="Event">
+      <Layout title="Promo-Promo">
         <Jumbotron
           class="tq"
           jtitle="Selamat Datang"

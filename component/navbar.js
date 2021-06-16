@@ -1,5 +1,15 @@
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 const Navbar = () => {
+    const router = useRouter();
+    function isActive(route) {
+        if (route == router.pathname) {
+            return "nav-item active";
+
+        } else {
+            return "";
+        }
+    }
        return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
@@ -15,34 +25,34 @@ const Navbar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
+                            <li className={isActive('/')}>
                                 <Link href="/">
-                                    <a className="nav-link">Home </a>
+                                    <a className="nav-link">Beranda </a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link href="/product/">
-                                    <a className="nav-link">Product </a>
+                            <li className={isActive('/product/product')}>
+                                <Link href="/product/product">
+                                    <a className="nav-link">Produk </a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className={isActive('/event')}>
                                 <Link href="/event">
-                                    <a className="nav-link">Event </a>
+                                    <a className="nav-link">Promo </a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className={isActive('/partners')}>
                                 <Link href="/partners">
-                                    <a className="nav-link">Partners </a>
+                                    <a className="nav-link">Mitra </a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className={isActive('/education')}>
                                 <Link href="/education">
-                                    <a className="nav-link">Education </a>
+                                    <a className="nav-link">Edukasi </a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className={isActive('/about')}>
                                 <Link href="/about">
-                                    <a className="nav-link">About </a>
+                                    <a className="nav-link">Tentang </a>
                                 </Link>
                             </li>
                         </ul>

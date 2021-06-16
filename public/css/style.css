@@ -4,6 +4,15 @@
 .tq{
     margin-top: 4rem;
 }
+.partner{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.partners{
+    max-width: 300px;
+    margin: 20px;
+}
 @media(min-width:600px){
     .rootCard{
         display: flex;

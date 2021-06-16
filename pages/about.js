@@ -3,7 +3,7 @@ import Jumbotron from "../component/jumbotron";
 const About = () => {
   return (
     <div>
-      <Layout title="About">
+      <Layout title="Tentang">
         <Jumbotron
           class="tq"
           jtitle="Selamat Datang"
