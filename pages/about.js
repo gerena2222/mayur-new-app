@@ -1,5 +1,6 @@
 import Layout from "../component/mainLayout";
 import Jumbotron from "../component/jumbotron";
+import AboutSection from "../component/aboutSection";
 const About = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const About = () => {
           jtitle="Selamat Datang"
           jteks="kami melayani About"
         />
+        <AboutSection/>
       </Layout>
     </div>
   );

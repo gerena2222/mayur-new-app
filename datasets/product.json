@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "gambar":"https://i.imgur.com/Lygt22y.jpg",
+        "title":"Moringa",
+        "deks":"Kandungan dan Manfaat Daun Kelor bagi Kesehatan Daun kelor dapat diolah menjadi jamu, teh herbal, hingga suplemen."
+    },
+    {
+        "id": 2,
+        "gambar":"https://i.imgur.com/DRlXl3i.jpg",
+        "title":"Moschata",
+        "deks":"Labu Kuning yang Bisa Anda Peroleh Labu kuning (Cucurbita moschata) merupakan salah satu jenis buah yang kerap dikonsumsi sebagai campuran kolak, kue, sup, dan puding."
+    },
+    {
+        "id": 3,
+        "gambar":"https://i.imgur.com/MCT9pfJ.jpg",
+        "title":"Beetroot",
+        "deks":"Manfaat Buah Bit, Si Merah dengan Segudang Nutrisi Bit adalah tanaman umbi-umbian yang banyak digunakan untuk pengobatan alami"
+    },
+    {
+        "id": 4,
+        "gambar":"https://i.imgur.com/yonTZwc.jpg",
+        "title":"Ginger",
+        "deks":"Kandungan dan Manfaat Daun Kelor bagi Kesehatan Daun kelor dapat diolah menjadi jamu, teh herbal, hingga suplemen."
+    },
+    {
+        "id": 5,
+        "gambar":"https://via.placeholder.com/200",
+        "title":"Blue Matcha",
+        "deks":"Kandungan dan Manfaat Daun Kelor bagi Kesehatan Daun kelor dapat diolah menjadi jamu, teh herbal, hingga suplemen."
+    }
+]

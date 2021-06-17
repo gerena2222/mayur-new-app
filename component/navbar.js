@@ -30,8 +30,8 @@ const Navbar = () => {
                                     <a className="nav-link">Beranda </a>
                                 </Link>
                             </li>
-                            <li className={isActive('/product/product')}>
-                                <Link href="/product/product">
+                            <li className={isActive('/product/')}>
+                                <Link href="/product/">
                                     <a className="nav-link">Produk </a>
                                 </Link>
                             </li>

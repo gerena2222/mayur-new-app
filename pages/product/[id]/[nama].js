@@ -1,15 +1,22 @@
-import { useRouter } from "next/router";
 import Layout from "../../../component/mainLayout";
-
-const DetailProduk = () => {
-  const router = useRouter();
-  const { id, nama } = router.query;
+import daftarProduct from "../../../datasets/product.json";
+import Jumbotron from "../../../component/jumbotron";
+export async function getServerSideProps(ctx) {
+  let id = ctx.params.id;
+  let data = daftarProduct.find((product) => product.id == id);
+  let { title, gambar, deks} = data;
+  return { props: { title, gambar, deks } };
+ }
+ 
+const DetailProduk = (props) => {
   return (
     <div>
       <Layout title="Product">
-        <h4 className="pt-3">PENELITIAN</h4>
-        <h1 className="display-4">{nama}</h1>
-        <p className="lead">Kode penelitian : {id}</p>
+        <Jumbotron/>
+        <h4 className="pt-3">Produk</h4>
+        <h1 className="display-4">{props.title}</h1>
+        <img src={props.gambar}/>
+        <p className="lead"></p>
       </Layout>
     </div>
   );
