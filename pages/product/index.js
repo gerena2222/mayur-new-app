@@ -13,7 +13,7 @@ export async function getServerSideProps(ctx) {
 const ProdLayout = (props) => {
   return (
     <div>
-      <div className="one card justify-content-center">
+      <div className="one card justify-content-center" >
         <img src={props.gambar} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
