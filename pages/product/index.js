@@ -1,10 +1,11 @@
 import CardProduct from "../../component/cardProduct";
 import Jumbotron from "../../component/jumbotron";
 import Layout from "../../component/mainLayout";
-import daftarProduct from "../../datasets/product.json";
 import Link from "next/link";
+import prisma from "../../client.ts";
 
 export async function getServerSideProps(ctx) {
+  const daftarProduct = await prisma.product.findMany();
   return {
     props: { daftarProduct },
   };
@@ -14,14 +15,13 @@ const ProdLayout = (props) => {
   return (
     <div>
       <div className="one card justify-content-center" >
-        <img src={props.gambar} className="card-img-top" alt="..." />
+        <img src={props.gambarProduct} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p>{props.deks}</p>
+          <h5 className="card-title">{props.namaProduct}</h5>
           <hr />
           <Link
             href="/product/[id]/[nama]"
-            as={`product/${props.id}/${props.title
+            as={`product/${props.id}/${props.namaProduct
               .replace(/\s+/g, "-")
               .toLowerCase()}`}
           >
@@ -41,9 +41,8 @@ const Product = (props) => {
           {props.daftarProduct.map((product) => (
             <ProdLayout
               id={product.id}
-              gambar={product.gambar}
-              title={product.title}
-              deks={product.deks}
+              gambarProduct={product.gambarProduct}
+              namaProduct={product.namaProduct}
             />
           ))}
         </CardProduct>

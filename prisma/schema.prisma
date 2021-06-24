@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./lppm.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id Int @id @default(autoincrement())
+  namaProduct String
+  gambarProduct String
+  kategori String?
+  deskripsi String
+}
+
+model Admin {
+  id Int @id @default(autoincrement())
+  userAdmin String @unique
+  passAdmin String
+}
