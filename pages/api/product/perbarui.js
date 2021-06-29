@@ -13,5 +13,5 @@ export default async (req, res) => {
       gambarProduct:product.gambarProduct,
     },
   });
-  res.json(update);
+  res.json(perbarui);
 };
