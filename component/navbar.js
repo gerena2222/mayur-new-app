@@ -24,7 +24,7 @@ const Navbar = () => {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav ml-auto" key="">
                             <li className={isActive('/')}>
                                 <Link href="/">
                                     <a className="nav-link">Beranda </a>

@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/style2.css" />
         <link rel="stylesheet" href="/css/style3.css" />
+        <link rel="stylesheet" href="/css/style4.css" />
         <script src="/js/main.js"></script>
       </Head>
       <Component {...pageProps} />
