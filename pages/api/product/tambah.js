@@ -7,7 +7,6 @@ export default async (req, res) => {
 
   const tambah = await prisma.product.create({
     data: {
-      id: product.id,
       namaProduct: product.namaProduct,
       gambarProduct:product.gambarProduct,
       kategori: product.kategori,
