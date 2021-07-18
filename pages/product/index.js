@@ -14,7 +14,7 @@ export async function getServerSideProps(ctx) {
 const ProdLayout = (props) => {
   return (
     <div>
-      <div className="one card justify-content-center" >
+      <div className="one card justify-content-center">
         <img src={props.gambarProduct} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.namaProduct}</h5>
@@ -37,7 +37,7 @@ const Product = (props) => {
     <div>
       <Layout title="Produk">
         <Jumbotron class="tq" jtitle="Selamat Datang" jteks="Halaman Product" />
-        <CardProduct>
+        <CardProduct key="">
           {props.daftarProduct.map((product) => (
             <ProdLayout
               id={product.id}

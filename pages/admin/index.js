@@ -34,7 +34,7 @@ const FormTambah = (props) => {
         </label>
         <input
           {...register("gambarProduct", { required: true })}
-          type="text"
+          type="url"
           className="form-control"
           id="inputdesk"
         />
@@ -70,7 +70,6 @@ const FormTambah = (props) => {
     </form>
   );
 };
-let id = 1;
 const Admin = (props) => {
   const [daftarProduk, setDaftarProduct] = useState(props.daftarProduk);
   return (
@@ -114,9 +113,9 @@ const Admin = (props) => {
             </tr>
           </thead>
           <tbody>
-            {daftarProduk.map((product) => (
+            {daftarProduk.map((product, nomor = 1) => (
               <tr key={product.id}>
-                <td>{id++}</td>
+                <td>{nomor + 1}</td>
                 <td>{product.namaProduct}</td>
                 {/* <td>{product.gambarProduct}</td> */}
                 <td>{product.kategori}</td>
@@ -125,9 +124,13 @@ const Admin = (props) => {
                   <a className="btn btn-sm btn-success">Ubah</a>
                   <button
                     className="btn btn-sm btn-danger"
-                    onClick={async (event) => {
+                    onClick={async (data, event) => {
+                      const product = {
+                        id: data.id,
+                      };
+
                       try {
-                        const hapus = await fetch("/api/product/hapus", {
+                        const respon = await fetch("/api/product/hapus", {
                           method: "POST",
                           body: JSON.stringify(product),
                         });
